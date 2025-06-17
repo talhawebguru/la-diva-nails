@@ -1,8 +1,8 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Container from "../common/Container";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 
 const textVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -31,8 +31,26 @@ const buttonTextVariants = {
 };
 
 const Hero = () => {
+  const buttonRef = useRef(null);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const translateX = useTransform(mouseX, [0, 1], [-20, 20]);
+  const translateY = useTransform(mouseY, [0, 1], [-20, 20]);
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    mouseX.set(x);
+    mouseY.set(y);
+  };
+
   return (
-    <section className="w-full h-[calc(100vh-134px)] max-h-[920px] flex items-center bg-black/80 relative overflow-hidden">
+    <section
+      className="w-full h-[calc(100vh-134px)] max-h-[920px] !flex !flex-wrap items-center bg-black/80 relative overflow-hidden"
+      onMouseMove={handleMouseMove}
+    >
       {/* Background Image */}
       <Image
         src="/images/heroImg.webp"
@@ -44,11 +62,11 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-30 z-10" />
       <Container>
-        <div className="relative z-20 flex h-full justify-end pt-80">
-          <div className="w-full">
+        <div className="relative z-20 flex flex-w h-full justify-end pt-20 md:pt-[25%]">
+          <div className="w-full px-4 md:px-0">
             {/* Headline */}
             <motion.h1
-              className="font-['Inter'] selection:bg-pink-100 font-normal text-white text-[64px] md:text-[90px] lg:text-[109px] leading-[1.1] max-w-4xl"
+              className="font-['Inter'] selection:bg-pink-100 font-normal text-white text-[40px] sm:text-[50px] md:text-[64px] lg:text-[90px] leading-[1.1] max-w-4xl"
               initial="hidden"
               animate="visible"
               custom={1}
@@ -57,7 +75,7 @@ const Hero = () => {
               Your destination for
               <br />
               <motion.span
-                className="text-[#ebdfdc] block text-[48px] md:text-[70px] lg:text-[75px] leading-[1.1]"
+                className="text-[#ebdfdc] block text-[30px] sm:text-[40px] md:text-[48px] lg:text-[70px] leading-[1.1]"
                 initial="hidden"
                 animate="visible"
                 custom={2}
@@ -66,7 +84,7 @@ const Hero = () => {
                 picture-perfect
               </motion.span>
               <motion.span
-                className="text-white block text-[60px] md:text-[90px] lg:text-[104px] leading-[1.1]"
+                className="text-white block text-[40px] sm:text-[50px] md:text-[60px] lg:text-[90px] leading-[1.1]"
                 initial="hidden"
                 animate="visible"
                 custom={3}
@@ -77,7 +95,7 @@ const Hero = () => {
             </motion.h1>
             {/* Subheadline */}
             <motion.p
-              className="mt-8 text-white text-[18px] md:text-[22px] font-medium font-['Figtree'] leading-[1.35] max-w-xl"
+              className="mt-4 sm:mt-8 text-white text-[14px] sm:text-[16px] md:text-[18px] font-medium font-['Figtree'] leading-[1.35] max-w-xl"
               initial="hidden"
               animate="visible"
               custom={4}
@@ -90,20 +108,18 @@ const Hero = () => {
 
           {/* Button */}
           <motion.div
-            className="mt-12 flex items-end justify-end"
+            className="mt-8 sm:mt-12 flex items-end justify-end"
             initial="hidden"
             animate="visible"
             variants={buttonVariants}
           >
             <motion.button
-              className="bg-[#f8f3ee] rounded-full w-40 h-40 flex flex-col items-center justify-center shadow-lg"
-              style={{ overflow: "hidden" }}
-              initial="hidden"
-              animate="visible"
-              variants={buttonVariants}
+              ref={buttonRef}
+              className="bg-[#f8f3ee] rounded-full w-32 h-32 sm:w-40 sm:h-40 flex flex-col items-center justify-center shadow-lg cursor-pointer"
+              style={{ translateX, translateY }}
             >
               <motion.span
-                className="text-[#40372c] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] text-center"
+                className="text-[#40372c] text-xs sm:text-sm font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] text-center"
                 initial="hidden"
                 animate="visible"
                 variants={buttonTextVariants}
