@@ -48,7 +48,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full h-[calc(100vh-134px)] max-h-[920px] !flex !flex-wrap items-center bg-black/80 relative overflow-hidden"
+      className="w-full h-[calc(100vh-134px)] max-h-[920px] !flex !flex-wrap md:items-end pb-5 bg-black/80 relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Background Image */}
@@ -56,13 +56,14 @@ const Hero = () => {
         src="/images/heroImg.webp"
         alt="Nail salon"
         fill
+        quality={100}
         className="object-cover object-center z-0"
         priority
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-30 z-10" />
       <Container>
-        <div className="relative z-20 flex flex-w h-full justify-end pt-20 md:pt-[25%]">
+        <div className="relative z-20 flex flex-wrap md:flex-nowrap  h-full justify-end items-end">
           <div className="w-full px-4 md:px-0">
             {/* Headline */}
             <motion.h1
@@ -75,7 +76,7 @@ const Hero = () => {
               Your destination for
               <br />
               <motion.span
-                className="text-[#ebdfdc] block text-[30px] sm:text-[40px] md:text-[48px] lg:text-[70px] leading-[1.1]"
+                className="text-[#ebdfdc] text-[30px] sm:text-[40px] md:text-[48px] lg:text-[70px] leading-[1.1]"
                 initial="hidden"
                 animate="visible"
                 custom={2}
@@ -84,7 +85,7 @@ const Hero = () => {
                 picture-perfect
               </motion.span>
               <motion.span
-                className="text-white block text-[40px] sm:text-[50px] md:text-[60px] lg:text-[90px] leading-[1.1]"
+                className="text-white text-[40px] sm:text-[50px] md:text-[60px] lg:text-[90px] leading-[1.1] ml-5"
                 initial="hidden"
                 animate="visible"
                 custom={3}
