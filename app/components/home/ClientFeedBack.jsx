@@ -2,8 +2,9 @@
 import React from "react";
 import { motion } from "motion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination} from 'swiper/modules';
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
 
 const feedbacks = [
   {
@@ -51,9 +52,17 @@ const ClientFeedBack = () => (
     </motion.div>
 
     <Swiper
-      modules={[Pagination]}
+      modules={[Pagination, Autoplay]}
       spaceBetween={30}
       slidesPerView={1}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+        dynamicBullets: true,
+      }}
       breakpoints={{
         768: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
@@ -91,6 +100,7 @@ const ClientFeedBack = () => (
         </SwiperSlide>
       ))}
     </Swiper>
+    {/* <div className="swiper-pagination mt-8 "></div> */}
   </section>
 );
 
