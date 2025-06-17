@@ -4,17 +4,17 @@ import Image from "next/image";
 
 const features = [
   {
-    icon: "/images/icon1.png",
+    icon: "/images/Icon1.png",
     title: "Upscale Location",
     desc: "Our salon is located in the upscale suburban neighborhood.",
   },
   {
-    icon: "/images/icon2.png",
+    icon: "/images/Icon2.png",
     title: "Artistic Integrity",
     desc: "We use the highest quality organic & vegan nail materials to provide superior nails.",
   },
   {
-    icon: "/images/icon3.png",
+    icon: "/images/Icon3.png",
     title: "Leading Designs",
     desc: "We provide a range of nail treatments that will leave your nails looking their best.",
   },
@@ -33,7 +33,6 @@ const Features = () => (
               height={64}
               className="mb-6"
               style={{ color: "#bfa7ad" }}
-              priority={idx === 0}
             />
             <div className="text-[#40372c] text-[22px] font-medium font-['Figtree'] leading-[29.7px] mb-3">
               {feature.title}
