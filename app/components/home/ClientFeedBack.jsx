@@ -34,7 +34,7 @@ const feedbacks = [
 ];
 
 const ClientFeedBack = () => (
-  <section className="py-20 bg-[#c08a99]">
+  <section className="py-5 sm:py-16 lg:py-28 xl:py-32 bg-[#c08a99]">
     <motion.div
       className="text-center mb-12"
       initial={{ opacity: 0, y: -30 }}
@@ -63,7 +63,7 @@ const ClientFeedBack = () => (
       {feedbacks.map((feedback, index) => (
         <SwiperSlide key={index}>
           <motion.div
-            className="flex flex-col items-center text-center bg-[#c08a99] rounded-lg shadow-lg p-8"
+            className="flex flex-col items-center text-center bg-[#c08a99] p-8 border-l border-[#faf5ec]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
