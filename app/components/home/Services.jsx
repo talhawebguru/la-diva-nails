@@ -22,8 +22,7 @@ const services = [
 ];
 
 const Services = () => (
-  <section className="py-16 bg-white">
-    <Container>
+  <section className="py-16 px-4 bg-white overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {services.map((service) => (
           <div
@@ -36,18 +35,16 @@ const Services = () => (
               fill
               className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw"
-              priority={service.title === "Manicure"}
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute bottom-8 left-0 w-full flex justify-center">
-              <span className="text-white text-2xl font-normal font-figtree ">
+              <span className="text-white text-5xl font-normal font-mogan ">
                 {service.title}
               </span>
             </div>
           </div>
         ))}
       </div>
-    </Container>
   </section>
 );
 

@@ -20,8 +20,8 @@ export default function Home() {
    <Hero />
    <AboutUs />
    <Features />
-   <FreshManicure/>
    <Services />
+   <FreshManicure/>
    <PriceGuide/>
    <NailArtGallery />
    <ClientFeedBack />
