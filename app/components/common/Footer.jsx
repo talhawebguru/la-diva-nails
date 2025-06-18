@@ -14,10 +14,10 @@ const pages = [
 ];
 
 const Footer = () => (
-  <footer className="w-full bg-[#f8f3ee] flex flex-col lg:flex-row min-h-[714px]">
+  <footer className="w-full bg-[#f8f3ee] flex flex-wrap xl:flex-nowrap flex-col xl:flex-row min-h-[654px] overflow-x-hidden">
     {/* Left/Main Footer */}
-    <div className="flex-1 flex flex-col justify-between px-8 lg:px-20 py-12">
-      <div className="flex flex-col lg:flex-row gap-12">
+    <div className="order-2 xl:order-1 flex-1 flex flex-col justify-between px-8 lg:px-20 py-16">
+      <div className="flex flex-row flex-wrap xl:flex-nowrap gap-12">
         {/* Logo */}
         <div className="flex-1 min-w-[180px] mb-8 lg:mb-0">
           <div className="mb-8">
@@ -26,14 +26,14 @@ const Footer = () => (
         </div>
         {/* Pages */}
         <div className="min-w-[180px] mb-8 lg:mb-0">
-          <div className="text-[#9c858b] text-xs font-medium font-figtree  uppercase tracking-[3px] mb-4">
+          <div className="text-[#9c858b] text-xs font-medium font-figtree  uppercase tracking-[3px] mb-8">
             Pages
           </div>
           <ul>
             {pages.map((page) => (
               <li
                 key={page}
-                className="text-[#40372c] text-lg font-normal font-figtree  leading-7 mb-2 hover:underline cursor-pointer"
+                className="text-[#40372c] text-lg font-normal font-figtree mt-5 leading-7 mb-2.5 hover:underline cursor-pointer"
               >
                 {page}
               </li>
@@ -42,14 +42,14 @@ const Footer = () => (
         </div>
         {/* Contacts */}
         <div className="min-w-[260px]">
-          <div className="text-[#9c858b] text-xs font-medium font-figtree  uppercase tracking-[3px] mb-4">
+          <div className="text-[#9c858b] text-xs font-medium font-figtree  uppercase tracking-[3px] mb-8">
             Contacts
           </div>
-          <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-4">
+          <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-8">
             511 SW 10th Ave 1206, Portland,<br />
             OR, United States
           </div>
-          <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-4">
+          <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-8">
             Mon – Fri: 8:30 am – 5:00 pm,<br />
             Sat – Sun: Closed
           </div>
@@ -58,12 +58,12 @@ const Footer = () => (
             1-800-123-1234
           </div>
           <div className="text-[#66715f] text-lg font-normal font-figtree  leading-7">
-            example@la-diva.com
+            example@thenailspa.com
           </div>
         </div>
       </div>
       {/* Newsletter & Copyright */}
-      <div className="mt-16 flex flex-col gap-5">
+      <div className="mt-16 flex flex-col flex-wrap gap-5">
         <div>
           <div className="text-[#40372c] text-[30px] font-normal font-['Inter'] leading-[41px] mb-4">
             Stay Updated
@@ -72,7 +72,7 @@ const Footer = () => (
             <input
               type="email"
               placeholder="Your email address...*"
-              className="w-80 border-b border-[#ded6cb] bg-transparent text-[#9c858b] text-base font-normal font-figtree  py-2 px-0 focus:outline-none placeholder:text-[#9c858b]"
+              className="max-w-80 border-b border-[#ded6cb] bg-transparent text-[#9c858b] text-base font-normal font-figtree  py-2 px-0 focus:outline-none placeholder:text-[#9c858b]"
             />
             <button
               type="submit"
@@ -84,11 +84,8 @@ const Footer = () => (
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mt-4">
           <div className="flex items-center gap-2">
-            <span className="text-[#5b534a] text-lg font-normal font-figtree ">
-              This is a sample website.
-            </span>
             <span className="text-[#40372c] text-lg font-normal font-figtree ">
-              cmsmasters
+              The Nail Spa
             </span>
             <span className="text-[#5b534a] text-lg font-normal font-figtree ">
               ©2025 - All Rights Reserved.
@@ -109,10 +106,10 @@ const Footer = () => (
       </div>
     </div>
     {/* Right/Appointment Form */}
-    <div className="w-full lg:w-[600px] bg-[#c08a99] flex flex-col justify-center items-center px-8 py-16">
+    <div className="order-1 xl:order-2 w-full xl:max-w-[600px] bg-[#c08a99] flex flex-col justify-center items-center px-8 py-16">
       <div className="w-full">
-        <div className="text-white text-5xl font-normal font-['Inter'] leading-[56.7px] mb-12">
-          Book an<br />appointment
+        <div className="text-white text-5xl font-normal font-mogan leading-[56.7px] mb-12">
+          Book an<br className="hidden xl:block" /> appointment
         </div>
         <form className="flex flex-col gap-8">
           <div className="border-b border-white/40 pb-2">
