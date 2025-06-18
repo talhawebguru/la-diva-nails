@@ -16,14 +16,14 @@ const AboutUs = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.4 }}
           >
             <motion.div
               className="rounded overflow-hidden"
               initial={{ x: -30 }}
               whileInView={{ x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
+              viewport={{ once: true , amount: 0.4 }}
             >
               <Image
                 src="/images/aboutus1.png"
@@ -38,7 +38,7 @@ const AboutUs = () => {
               initial={{ x: 30 }}
               whileInView={{ x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.4 }}
             >
               <Image
                 src="/images/aboutus2.png"
@@ -56,7 +56,7 @@ const AboutUs = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.4 }}
           >
             <div className="mb-4 text-[#40372c] selection:bg-[rgb(192,138,153)] selection:text-white text-xs font-medium font-figtree uppercase leading-tight tracking-[3px]">
               Extensive Nail Care
