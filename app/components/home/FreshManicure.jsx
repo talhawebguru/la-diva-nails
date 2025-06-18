@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 const FreshManicure = () => (
-  <section className="flex flex-col xl:flex-row items-center  gap-12  bg-[#ebdfdc]">
+  <section className="flex flex-col xl:flex-row items-center gap-12 bg-[#ebdfdc] overflow-hidden">
     {/* Image Section */}
     <motion.div
       className="order-2 xl:order-1 w-full h-[500px] xl:w-[847px] xl:h-[800px] relative rounded-lg overflow-hidden"

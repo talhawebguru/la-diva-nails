@@ -19,7 +19,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className="py-20 bg-[#faf5ec]">
+    <section className="py-20 px-4 sm:px-8 overflow-hidden ">
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0, y: -30 }}
@@ -27,10 +27,10 @@ const Faqs = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-[#40372c] text-[40px] md:text-[63.42px] font-normal font-['Inter'] leading-[75.60px] mb-4">
+        <h2 className="text-[#40372c] text-[60px] md:text-[72px] font-normal font-mogan leading-[75.60px] mb-4">
           Your questions,
         </h2>
-        <p className="text-[#c08a99] text-[32px] md:text-[52.99px] font-normal font-['Inter'] leading-[68px]">
+        <p className="text-[#c08a99] text-[52px] md:text-[68px] font-normal font-betterlett leading-[68px]">
           answered
         </p>
       </motion.div>
@@ -82,9 +82,15 @@ const Faqs = () => {
         <p className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-4">
           Can’t find what you’re looking for?
         </p>
-        <button className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition">
+        <motion.button className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
+        initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ backgroundColor: "#66715f" ,color: "white" }}
+          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+          viewport={{ once: true }}
+          >
           Contact Us
-        </button>
+        </motion.button>
       </motion.div>
     </section>
   );
