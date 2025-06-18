@@ -35,7 +35,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-8 overflow-hidden ">
+    <section className="py-20 px-4 sm:px-8 overflow-hidden selection:bg-[rgb(192,138,153)] selection:text-white">
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0, y: -30 }}
@@ -102,8 +102,8 @@ const Faqs = () => {
           className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ backgroundColor: "#66715f", color: "white" }}
-          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+          whileHover={{ color: "white", backgroundColor: "#66715f" }}
+          transition={{ duration: 0.2, delay: 0.05, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           Contact Us

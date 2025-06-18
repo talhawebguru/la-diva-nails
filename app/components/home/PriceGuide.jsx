@@ -24,11 +24,11 @@ const PriceGuide = () => (
   <section>
     <Container>
       <motion.div
-        className="flex flex-col items-center py-20 overflow-hidden"
+        className="flex flex-col items-center py-20 overflow-hidden selection:bg-[rgb(192,138,153)] selection:text-white"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         {/* Heading */}
         <motion.h2
@@ -62,6 +62,7 @@ const PriceGuide = () => (
             className="flex flex-col md:flex-row items-center bg-[#faf5ec] rounded-lg overflow-hidden shadow-lg w-full"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
             viewport={{ once: true }}
           >
@@ -100,6 +101,7 @@ const PriceGuide = () => (
             className="flex flex-col md:flex-row items-center bg-[#66715f] rounded-lg overflow-hidden shadow-lg w-full"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
           >
@@ -136,11 +138,11 @@ const PriceGuide = () => (
         </motion.div>
         {/* Full Price Guide Button */}
         <motion.button
-          className="mt-4 px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] transition"
+          className="mt-4 px-8 py-3 border border-[#66715f] rounded cursor-pointer bg-white text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] transition"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ backgroundColor: "#66715f" ,color: "white" }}
-          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+          whileHover={{ color: "white", backgroundColor: "#66715f" }}
+          transition={{ duration: 0.2, delay: 0.1, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           Full Price Guide

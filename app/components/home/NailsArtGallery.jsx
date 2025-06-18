@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 const NailArtGallery = () => (
-  <section className="relative w-full h-[88vh] bg-gray-800 overflow-hidden">
+  <section className="relative w-full h-[88vh] bg-gray-800 overflow-hidden selection:bg-[rgb(192,138,153)] selection:text-white">
     {/* Background Image */}
     <motion.div
       className="absolute inset-0 w-full h-full overflow-hidden"

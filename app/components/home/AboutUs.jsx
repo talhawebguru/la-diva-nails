@@ -23,7 +23,7 @@ const AboutUs = () => {
               initial={{ x: -30 }}
               whileInView={{ x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true , amount: 0.4 }}
+              viewport={{ once: true, amount: 0.4 }}
             >
               <Image
                 src="/images/aboutus1.png"
@@ -62,19 +62,25 @@ const AboutUs = () => {
               Extensive Nail Care
             </div>
             <h2 className="mb-6 lg:w-[500px] selection:bg-[rgb(192,138,153)] selection:text-white font-mogan font-normal text-[#40372c] text-[55px] md:text-[72px] leading-[1.15]">
-              Get your look
-              polished,<span className="text-[rgb(192,138,153)] inline-block mx-4 font-betterlett">from</span>
+              Get your look polished,
+              <span className="text-[rgb(192,138,153)] inline-block mx-4 font-betterlett">
+                from
+              </span>
               fingers to toes
             </h2>
             <p className="mb-10 selection:bg-[rgb(192,138,153)] selection:text-white text-[#5b534a] text-lg font-normal font-figtree leading-7">
-              Nail art, manicures, and nail shaping are just some of the specialties
-              of our experienced nail technicians. You can count on us whether you
-              want a classic manicure, trendy shellac paint, or custom nail art.
+              Nail art, manicures, and nail shaping are just some of the
+              specialties of our experienced nail technicians. You can count on
+              us whether you want a classic manicure, trendy shellac paint, or
+              custom nail art.
             </p>
             <motion.button
               className="px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
-              whileHover={{ backgroundColor: "rgb(102,113,95)", color: "white" }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ color: "white", backgroundColor: "#66715f" }}
+              transition={{ duration: 0.2, delay: 0.1, ease: "easeOut" }}
+              viewport={{ once: true }}
             >
               More About Us
             </motion.button>

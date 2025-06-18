@@ -31,10 +31,10 @@ const FreshManicure = () => (
     >
       {/* Heading */}
       <div>
-        <div className="text-[#40372c] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] mb-2">
+        <div className="text-[#40372c] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] mb-2 selection:bg-[rgb(192,138,153)] selection:text-white">
           More than just nails
         </div>
-        <h2 className="text-[#c08a99] text-[50px] sm:text-[68.13px] font-normal font-betterlett leading-[68px] mt-4 inline-block">
+        <h2 className="text-[#c08a99] text-[50px] sm:text-[68.13px] font-normal font-betterlett leading-[68px] mt-4 inline-block selection:bg-[rgb(192,138,153)] selection:text-white">
           There's
           <span className="inline-block mx-2 text-[#40372c] text-[50px] sm:text-[64px] 2xl:text-[72.12px] font-normal font-mogan leading-[75.60px] ">
             nothing a fresh
@@ -46,7 +46,7 @@ const FreshManicure = () => (
       </div>
 
       {/* Statistics */}
-      <div className="flex flex-col  gap-8">
+      <div className="flex flex-col  gap-8 selection:bg-[rgb(192,138,153)] selection:text-white">
         {/* Statistic 1 */}
         <div className="flex flex-wrap sm:flex-nowrap items-start gap-4">
           <div className="flex items-baseline sm:flex-1">
@@ -57,7 +57,7 @@ const FreshManicure = () => (
               ,000+
             </span>
           </div>
-          <div className="sm:flex-3">
+          <div className="sm:flex-3 selection:bg-[rgb(192,138,153)] selection:text-white">
             <div className="text-[#40372c] text-[22px] font-medium font-figtree  leading-[29.70px] mb-2">
               Cuticles removed every year
             </div>
@@ -69,7 +69,7 @@ const FreshManicure = () => (
         </div>
 
         {/* Statistic 2 */}
-        <div className="flex flex-wrap sm:flex-nowrap items-start gap-4">
+        <div className="flex flex-wrap sm:flex-nowrap items-start gap-4 selection:bg-[rgb(192,138,153)] selection:text-white">
           <div className="flex items-baseline sm:flex-1">
             <span className="text-[#66715f] text-[54px] font-normal font-mogan leading-[56.70px]">
               13

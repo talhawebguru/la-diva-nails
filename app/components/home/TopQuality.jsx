@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 const TopQuality = () => (
-  <section className="flex flex-col lg:flex-row items-center justify-center lg:items-start gap-12 px-4 sm:px-0 sm:pl-8 lg:pl-16 bg-[#ebdfdc] overflow-hidden">
+  <section className="selection:bg-[rgb(192,138,153)] selection:text-white flex flex-col lg:flex-row items-center justify-center lg:items-start gap-12 px-4 sm:px-0 sm:pl-8 lg:pl-16 bg-[#ebdfdc] overflow-hidden">
     {/* Text Section */}
     <motion.div
       className="w-full lg:w-1/2  flex flex-col items-center sm:items-start justify-center gap-4 py-20"

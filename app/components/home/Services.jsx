@@ -38,7 +38,7 @@ const Services = () => (
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute bottom-8 left-0 w-full flex justify-center">
-              <span className="text-white text-5xl font-normal font-mogan ">
+              <span className="text-white text-5xl font-normal font-mogan selection:bg-[rgb(192,138,153)] selection:text-white">
                 {service.title}
               </span>
             </div>

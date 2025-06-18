@@ -35,7 +35,7 @@ const feedbacks = [
 ];
 
 const ClientFeedBack = () => (
-  <section className="py-5 sm:py-16 lg:py-28 xl:py-32 bg-[#c08a99] overflow-hidden">
+  <section className="py-5 sm:py-16 lg:py-28 xl:py-32 bg-[#c08a99] relative overflow-hidden selection:bg-[rgb(192,138,153)] selection:text-white">
     <motion.div
       className="text-center mb-12"
       initial={{ opacity: 0, y: -30 }}
@@ -100,7 +100,7 @@ const ClientFeedBack = () => (
         </SwiperSlide>
       ))}
     </Swiper>
-    <div className="swiper-pagination !flex !justify-center w-full gap-2 mt-10"></div>
+    <div className="swiper-pagination !flex !justify-center w-full gap-2 bottom-4"></div>
     <style jsx>{`
       .swiper-pagination-bullet {
         background: transparent !important;

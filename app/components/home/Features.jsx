@@ -49,10 +49,10 @@ const Features = () => (
               height={64}
               className="mb-6"
             />
-            <div className="text-[#40372c] text-[22px] font-medium font-figtree leading-[29.7px] mb-3">
+            <div className="text-[#40372c] text-[22px] font-medium font-figtree leading-[29.7px] mb-3 selection:bg-[rgb(192,138,153)] selection:text-white">
               {feature.title}
             </div>
-            <div className="text-[#5b534a] text-lg font-normal font-figtree leading-7 max-w-[400px]">
+            <div className="text-[#5b534a] text-lg font-normal font-figtree leading-7 max-w-[400px] selection:bg-[rgb(192,138,153)] selection:text-white">
               {feature.desc}
             </div>
           </motion.div>

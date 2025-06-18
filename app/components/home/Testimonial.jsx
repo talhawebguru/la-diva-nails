@@ -23,18 +23,20 @@ const Testimonial = () => (
 
         {/* Testimonial Text */}
         <motion.h2
-          className="text-[#5b534a] text-[42px] md:text-[54px] font-normal font-mogan leading-[1.2] mb-6"
+          className="text-[#5b534a] text-[42px] md:text-[54px] font-normal font-mogan leading-[1.2] mb-6 selection:bg-[rgb(192,138,153)] selection:text-white"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          “You won’t find a better<br />nails salon in Los Angeles.”
+          “You won’t find a better
+          <br />
+          nails salon in Los Angeles.”
         </motion.h2>
 
         {/* Rating Info */}
         <motion.p
-          className="text-[#9c858b] text-lg font-normal font-figtree  leading-7 mb-8"
+          className="text-[#9c858b] text-lg font-normal font-figtree  leading-7 mb-8 selection:bg-[rgb(192,138,153)] selection:text-white"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
@@ -48,8 +50,8 @@ const Testimonial = () => (
           className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ backgroundColor: "#66715f" ,color: "white" }}
-          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+          whileHover={{ color: "white", backgroundColor: "#66715f" }}
+          transition={{ duration: 0.2, delay: 0.05, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           Make an Appointment
