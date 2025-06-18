@@ -24,7 +24,7 @@ const PriceGuide = () => (
   <section>
     <Container>
       <motion.div
-        className="flex flex-col items-center py-20"
+        className="flex flex-col items-center py-20 overflow-hidden"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -32,7 +32,7 @@ const PriceGuide = () => (
       >
         {/* Heading */}
         <motion.h2
-          className="text-[#40372c] text-[40px] md:text-[54px] lg:text-[63.56px] font-normal font-['Inter'] leading-[1.15] text-center mb-2"
+          className="text-[#40372c] text-[54px] lg:text-[64px] font-normal font-mogan leading-[1.15] text-center mb-2"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
@@ -41,7 +41,7 @@ const PriceGuide = () => (
           Price Guide
         </motion.h2>
         <motion.p
-          className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 text-center mb-12"
+          className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -65,7 +65,7 @@ const PriceGuide = () => (
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="w-full md:w-[180px] h-[220px] md:h-auto relative">
+            <div className="w-full hidden md:block md:w-[180px] h-[220px] md:h-auto relative">
               <Image
                 src="/images/price1.png"
                 alt="Manicure"
@@ -76,12 +76,12 @@ const PriceGuide = () => (
               />
             </div>
             <div className="flex-1 p-8">
-              <div className="text-[#40372c] text-[28px] md:text-[31.78px] font-normal font-['Inter'] leading-[41.4px] mb-6">
+              <div className="text-[#40372c] text-[28px] md:text-[32px] font-normal font-mogan leading-[41.4px] mb-6">
                 Manicure
               </div>
               <ul>
                 {manicurePrices.map((item, idx) => (
-                  <li key={item.name} className="flex justify-between items-center mb-3">
+                  <li key={item.name} className="flex justify-between items-center mb-2 pb-2 border-b !border-[rgba(222,214,203,1)]">
                     <span className="text-[#5b534a] text-base font-normal font-figtree  leading-relaxed">
                       {item.name}
                     </span>
@@ -101,7 +101,7 @@ const PriceGuide = () => (
             transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="w-full md:w-[180px] h-[220px] md:h-auto relative">
+            <div className="w-full hidden md:block md:w-[180px] h-[220px] md:h-auto relative">
               <Image
                 src="/images/price2.png"
                 alt="Pedicure"
@@ -112,12 +112,12 @@ const PriceGuide = () => (
               />
             </div>
             <div className="flex-1 p-8">
-              <div className="text-white text-[28px] md:text-[31.36px] font-normal font-['Inter'] leading-[41.4px] mb-6">
+              <div className="text-white text-[28px] md:text-[32px] font-normal font-mogan leading-[41.4px] mb-6">
                 Pedicure
               </div>
               <ul>
-                {pedicurePrices.map((item, idx) => (
-                  <li key={item.name} className="flex justify-between items-center mb-3">
+                {pedicurePrices.map((item, idx) => ( 
+                  <li key={item.name} className="flex justify-between items-center mb-2 pb-2 border-b !border-[rgba(235,230,222,0.2)]">
                     <span className="text-white text-base font-normal font-figtree  leading-relaxed">
                       {item.name}
                     </span>
