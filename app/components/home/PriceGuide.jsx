@@ -59,24 +59,23 @@ const PriceGuide = () => (
         >
           {/* Manicure Card */}
           <motion.div
-            className="flex flex-col md:flex-row bg-[#faf5ec] rounded-lg overflow-hidden shadow-lg max-w-[500px] w-full"
+            className="flex flex-col md:flex-row items-center bg-[#faf5ec] rounded-lg overflow-hidden shadow-lg  w-full"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="w-full hidden md:block md:w-[180px] h-[220px] md:h-auto relative">
+            <div className="w-full hidden md:block md:w-[250px] h-[450px] relative">
               <Image
                 src="/images/price1.png"
                 alt="Manicure"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 180px"
-                priority
               />
             </div>
-            <div className="flex-1 p-8">
-              <div className="text-[#40372c] text-[28px] md:text-[32px] font-normal font-mogan leading-[41.4px] mb-6">
+            <div className="flex-1 p-8 w-full">
+              <div className="text-[#40372c] text-[28px] md:text-[32px] font-normal font-mogan leading-[41.4px] mb-6 w-full">
                 Manicure
               </div>
               <ul>
@@ -95,23 +94,22 @@ const PriceGuide = () => (
           </motion.div>
           {/* Pedicure Card */}
           <motion.div
-            className="flex flex-col md:flex-row bg-[#66715f] rounded-lg overflow-hidden shadow-lg max-w-[500px] w-full"
+            className="flex flex-col md:flex-row items-center bg-[#66715f] rounded-lg overflow-hidden shadow-lg w-full"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.5, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <div className="w-full hidden md:block md:w-[180px] h-[220px] md:h-auto relative">
+            <div className="w-full hidden md:block md:w-[250px] h-[450px] relative">
               <Image
                 src="/images/price2.png"
                 alt="Pedicure"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 180px"
-                priority
               />
             </div>
-            <div className="flex-1 p-8">
+            <div className="flex-1 p-8 w-full">
               <div className="text-white text-[28px] md:text-[32px] font-normal font-mogan leading-[41.4px] mb-6">
                 Pedicure
               </div>
