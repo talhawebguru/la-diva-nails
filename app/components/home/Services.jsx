@@ -27,7 +27,7 @@ const Services = () => (
         {services.map((service) => (
           <div
             key={service.title}
-            className="relative aspect-[4/5] rounded overflow-hidden group shadow"
+            className="relative aspect-square md:aspect-[4/5] rounded overflow-hidden group shadow"
           >
             <Image
               src={service.image}
