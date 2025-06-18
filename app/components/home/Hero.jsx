@@ -1,8 +1,25 @@
 "use client";
 import React, { useRef } from "react";
+import { useEffect, useState } from "react";
 import Container from "../common/Container";
 import Image from "next/image";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    checkIsMobile(); // Initial check
+    window.addEventListener("resize", checkIsMobile);
+    return () => window.removeEventListener("resize", checkIsMobile);
+  }, []);
+
+  return isMobile;
+};
 
 const textVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -31,6 +48,7 @@ const buttonTextVariants = {
 };
 
 const Hero = () => {
+  const isMobile = useIsMobile();
   const buttonRef = useRef(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -119,14 +137,8 @@ const Hero = () => {
               ref={buttonRef}
               className="bg-[#f8f3ee] rounded-full w-32 h-32 sm:w-40 sm:h-40 flex flex-col items-center justify-center shadow-lg cursor-pointer"
               style={{
-                translateX:
-                  typeof window !== "true" && window.innerWidth > 640
-                    ? translateX
-                    : 0,
-                translateY:
-                  typeof window !== "true" && window.innerWidth > 640
-                    ? translateY
-                    : 0,
+                translateX: isMobile ? 0 : translateX,
+                translateY: isMobile ? 0 : translateY,
               }}
             >
               <motion.span
