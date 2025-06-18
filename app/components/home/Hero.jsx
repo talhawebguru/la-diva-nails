@@ -48,7 +48,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full h-[calc(100vh-134px)] max-h-[920px] !flex !flex-wrap justify-center  items-center md:items-end pb-5 bg-black/80 relative overflow-hidden"
+      className="w-full h-[650px] sm:h-[calc(100vh-134px)] py-10 sm:py-5  max-h-[920px] !flex !flex-wrap justify-center  items-center md:items-end pb-5 bg-black/80 relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Background Image */}
@@ -57,7 +57,7 @@ const Hero = () => {
         alt="Nail salon"
         fill
         quality={100}
-        className="object-cover object-center z-0"
+        className="object-cover sm:object-center z-0"
         priority
       />
       {/* Overlay */}
@@ -67,16 +67,16 @@ const Hero = () => {
           <div className="w-full px-4 md:px-0 text-center md:text-left">
             {/* Headline */}
             <motion.h1
-              className="font-mogan selection:bg-[rgba(192,138,153,1)] font-normal text-white text-[64px] lg:text-[90px] xl:text-[120px] 2xl:text-[130px] leading-14 md:leading-9 lg:leading-[120px] max-w-7xl 2xl:max-w-6xl"
+              className="font-mogan selection:bg-[rgba(192,138,153,1)] font-normal text-white text-[60px] sm:text-[64px] lg:text-[90px] xl:text-[120px] 2xl:text-[130px] leading-14 md:leading-9 lg:leading-[120px]"
               initial="hidden"
               animate="visible"
               custom={1}
               variants={textVariants}
             >
               Your destination for
-              <br />
+              <br className="hidden sm:block" />
               <motion.span
-                className="text-[#ebdfdc] selection:text-white font-betterlett text-[80px] lg:text-[110px] leading-[1.1]"
+                className="text-[#ebdfdc] selection:text-white font-betterlett text-[50px] sm:text-[80px] lg:text-[110px] leading-[1.1]"
                 initial="hidden"
                 animate="visible"
                 custom={2}
@@ -86,7 +86,7 @@ const Hero = () => {
               </motion.span>
               <br className="md:hidden" />
               <motion.span
-                className="text-white text-[80px] lg:text-[130px] leading-[1.1] ml-8"
+                className="text-white text-[60px] sm:text-[80px] lg:text-[130px] leading-[1.1] ml-8"
                 initial="hidden"
                 animate="visible"
                 custom={3}
@@ -97,7 +97,7 @@ const Hero = () => {
             </motion.h1>
             {/* Subheadline */}
             <motion.p
-              className="mt-4 selection:bg-[rgba(192,138,153,1)] sm:mt-8 text-white text-[16px] md:text-[22px] font-medium font-figtree  leading-[1.35] max-w-2xl"
+              className="mt-4 selection:bg-[rgba(192,138,153,1)] sm:mt-8 text-white text-[18px] md:text-[22px] font-medium font-figtree  leading-[1.35] max-w-2xl"
               initial="hidden"
               animate="visible"
               custom={4}
