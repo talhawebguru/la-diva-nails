@@ -31,12 +31,12 @@ const AboutUs = () => {
           </div>
           {/* Text Content */}
           <div className="flex-2 max-w-xl">
-            <div className="mb-4 text-[#40372c] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px]">
+            <div className="mb-4 text-[#40372c] selection:bg-[rgb(192,138,153)] selection:text-white text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px]">
               Extensive Nail Care
             </div>
-            <h2 className="mb-6 font-['Inter'] font-normal text-[#40372c] text-[44px] sm:text-[55px] md:text-[65.39px] leading-[1.15]">
+            <h2 className="mb-6 selection:bg-[rgb(192,138,153)] selection:text-white font-mogan font-normal text-[#40372c] text-[44px] sm:text-[55px] md:text-[72px] leading-[1.15]">
               Get your look<br />
-              polished,<span className="text-[#bfa7ad]">from</span>
+              polished,<span className="text-[rgb(192,138,153)] ml-4 font-betterlett">from</span>
               <br />
               fingers to toes
             </h2>
