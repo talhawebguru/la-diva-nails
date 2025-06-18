@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Container from "../common/Container";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const features = [
   {
@@ -21,28 +24,40 @@ const features = [
 ];
 
 const Features = () => (
-  <section className="py-16 bg-white">
+  <section className="py-16 bg-white overflow-hidden">
     <Container>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         {features.map((feature, idx) => (
-          <div key={idx} className="flex flex-col items-center">
+          <motion.div
+            key={idx}
+            className="flex flex-col items-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: idx * 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <Image
               src={feature.icon}
               alt={feature.title}
               width={64}
               height={64}
               className="mb-6"
-              style={{ color: "#bfa7ad" }}
             />
-            <div className="text-[#40372c] text-[22px] font-medium font-figtree  leading-[29.7px] mb-3">
+            <div className="text-[#40372c] text-[22px] font-medium font-figtree leading-[29.7px] mb-3">
               {feature.title}
             </div>
-            <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 max-w-[400px]">
+            <div className="text-[#5b534a] text-lg font-normal font-figtree leading-7 max-w-[400px]">
               {feature.desc}
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </Container>
   </section>
 );
