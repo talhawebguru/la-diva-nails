@@ -53,9 +53,8 @@ const Footer = () => (
             Contacts
           </div>
           <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-8">
-            511 SW 10th Ave 1206, Portland,
-            <br />
-            OR, United States
+            126 E. Johnson Ave. Chelan,
+            <br /> WA, United States
           </div>
           <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-8">
             Mon – Fri: 8:30 am – 5:00 pm,
@@ -64,7 +63,7 @@ const Footer = () => (
           </div>
           <div className="flex items-center gap-2 text-[#66715f] text-[22px] font-medium font-figtree  leading-[29.7px] mb-2">
             <FiPhone className="text-[#66715f]" size={22} />
-            1-800-123-1234
+            +1 509-888-7277
           </div>
           <div className="text-[#66715f] text-lg font-normal font-figtree  leading-7">
             example@thenailspa.com
@@ -106,13 +105,13 @@ const Footer = () => (
             </span>
           </div>
           <div className="flex items-center gap-6 mt-2 md:mt-0">
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.facebook.com/profile.php?id=100064592097234#" target="_blank" aria-label="Instagram">
               <FiInstagram className="text-[#66715f] w-5 h-5" />
             </a>
-            <a href="#" aria-label="X">
+            <a href="https://www.facebook.com/profile.php?id=100064592097234#" target="_blank" aria-label="X">
               <FiX className="text-[#66715f] w-5 h-5" />
             </a>
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=100064592097234#" target="_blank" aria-label="Facebook">
               <FiFacebook className="text-[#66715f] w-5 h-5" />
             </a>
           </div>

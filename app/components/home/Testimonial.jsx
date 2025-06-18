@@ -31,7 +31,7 @@ const Testimonial = () => (
         >
           “You won’t find a better
           <br />
-          nails salon in Los Angeles.”
+          nails salon in Chelan.”
         </motion.h2>
 
         {/* Rating Info */}
