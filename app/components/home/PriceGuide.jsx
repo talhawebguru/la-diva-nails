@@ -41,7 +41,7 @@ const PriceGuide = () => (
           Price Guide
         </motion.h2>
         <motion.p
-          className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 text-center mb-16"
+          className="text-[#5b534a] text-lg font-normal font-figtree leading-7 text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -59,7 +59,7 @@ const PriceGuide = () => (
         >
           {/* Manicure Card */}
           <motion.div
-            className="flex flex-col md:flex-row items-center bg-[#faf5ec] rounded-lg overflow-hidden shadow-lg  w-full"
+            className="flex flex-col md:flex-row items-center bg-[#faf5ec] rounded-lg overflow-hidden shadow-lg w-full"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
@@ -80,11 +80,14 @@ const PriceGuide = () => (
               </div>
               <ul>
                 {manicurePrices.map((item, idx) => (
-                  <li key={item.name} className="flex justify-between items-center mb-2 pb-2 border-b !border-[rgba(222,214,203,1)]">
-                    <span className="text-[#5b534a] text-base font-normal font-figtree  leading-relaxed">
+                  <li
+                    key={item.name}
+                    className="flex justify-between items-center mb-2 pb-2 border-b !border-[rgba(222,214,203,1)]"
+                  >
+                    <span className="text-[#5b534a] text-base font-normal font-figtree leading-relaxed">
                       {item.name}
                     </span>
-                    <span className="text-[#66715f] text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
+                    <span className="text-[#66715f] text-xs font-semibold font-figtree uppercase leading-tight tracking-widest">
                       {item.price}
                     </span>
                   </li>
@@ -114,12 +117,15 @@ const PriceGuide = () => (
                 Pedicure
               </div>
               <ul>
-                {pedicurePrices.map((item, idx) => ( 
-                  <li key={item.name} className="flex justify-between items-center mb-2 pb-2 border-b !border-[rgba(235,230,222,0.2)]">
-                    <span className="text-white text-base font-normal font-figtree  leading-relaxed">
+                {pedicurePrices.map((item, idx) => (
+                  <li
+                    key={item.name}
+                    className="flex justify-between items-center mb-2 pb-2 border-b !border-[rgba(235,230,222,0.2)]"
+                  >
+                    <span className="text-white text-base font-normal font-figtree leading-relaxed">
                       {item.name}
                     </span>
-                    <span className="text-[#e1cad0] text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
+                    <span className="text-[#e1cad0] text-xs font-semibold font-figtree uppercase leading-tight tracking-widest">
                       {item.price}
                     </span>
                   </li>
@@ -130,9 +136,10 @@ const PriceGuide = () => (
         </motion.div>
         {/* Full Price Guide Button */}
         <motion.button
-          className="mt-4 px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
+          className="mt-4 px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] transition"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          whileHover={{ backgroundColor: "#66715f" ,color: "white" }}
           transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
         >
