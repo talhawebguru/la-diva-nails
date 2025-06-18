@@ -26,14 +26,14 @@ const Footer = () => (
         </div>
         {/* Pages */}
         <div className="min-w-[180px] mb-8 lg:mb-0">
-          <div className="text-[#9c858b] text-xs font-medium font-['Figtree'] uppercase tracking-[3px] mb-4">
+          <div className="text-[#9c858b] text-xs font-medium font-figtree  uppercase tracking-[3px] mb-4">
             Pages
           </div>
           <ul>
             {pages.map((page) => (
               <li
                 key={page}
-                className="text-[#40372c] text-lg font-normal font-['Figtree'] leading-7 mb-2 hover:underline cursor-pointer"
+                className="text-[#40372c] text-lg font-normal font-figtree  leading-7 mb-2 hover:underline cursor-pointer"
               >
                 {page}
               </li>
@@ -42,22 +42,22 @@ const Footer = () => (
         </div>
         {/* Contacts */}
         <div className="min-w-[260px]">
-          <div className="text-[#9c858b] text-xs font-medium font-['Figtree'] uppercase tracking-[3px] mb-4">
+          <div className="text-[#9c858b] text-xs font-medium font-figtree  uppercase tracking-[3px] mb-4">
             Contacts
           </div>
-          <div className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7 mb-4">
+          <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-4">
             511 SW 10th Ave 1206, Portland,<br />
             OR, United States
           </div>
-          <div className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7 mb-4">
+          <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-4">
             Mon – Fri: 8:30 am – 5:00 pm,<br />
             Sat – Sun: Closed
           </div>
-          <div className="flex items-center gap-2 text-[#66715f] text-[22px] font-medium font-['Figtree'] leading-[29.7px] mb-2">
+          <div className="flex items-center gap-2 text-[#66715f] text-[22px] font-medium font-figtree  leading-[29.7px] mb-2">
             <FiPhone className="text-[#66715f]" size={22} />
             1-800-123-1234
           </div>
-          <div className="text-[#66715f] text-lg font-normal font-['Figtree'] leading-7">
+          <div className="text-[#66715f] text-lg font-normal font-figtree  leading-7">
             example@la-diva.com
           </div>
         </div>
@@ -72,11 +72,11 @@ const Footer = () => (
             <input
               type="email"
               placeholder="Your email address...*"
-              className="w-80 border-b border-[#ded6cb] bg-transparent text-[#9c858b] text-base font-normal font-['Figtree'] py-2 px-0 focus:outline-none placeholder:text-[#9c858b]"
+              className="w-80 border-b border-[#ded6cb] bg-transparent text-[#9c858b] text-base font-normal font-figtree  py-2 px-0 focus:outline-none placeholder:text-[#9c858b]"
             />
             <button
               type="submit"
-              className="w-40 h-[44px] outline outline-[#66715f] text-[#66715f] text-xs font-medium font-['Figtree'] uppercase tracking-[3px] bg-white hover:bg-[#f8f3ee] transition"
+              className="w-40 h-[44px] outline outline-[#66715f] text-[#66715f] text-xs font-medium font-figtree  uppercase tracking-[3px] bg-white hover:bg-[#f8f3ee] transition"
             >
               Subscribe
             </button>
@@ -84,13 +84,13 @@ const Footer = () => (
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mt-4">
           <div className="flex items-center gap-2">
-            <span className="text-[#5b534a] text-lg font-normal font-['Figtree']">
+            <span className="text-[#5b534a] text-lg font-normal font-figtree ">
               This is a sample website.
             </span>
-            <span className="text-[#40372c] text-lg font-normal font-['Figtree']">
+            <span className="text-[#40372c] text-lg font-normal font-figtree ">
               cmsmasters
             </span>
-            <span className="text-[#5b534a] text-lg font-normal font-['Figtree']">
+            <span className="text-[#5b534a] text-lg font-normal font-figtree ">
               ©2025 - All Rights Reserved.
             </span>
           </div>
@@ -119,19 +119,19 @@ const Footer = () => (
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full bg-transparent text-white text-base font-normal font-['Figtree'] py-3 px-0 focus:outline-none placeholder:text-white"
+              className="w-full bg-transparent text-white text-base font-normal font-figtree  py-3 px-0 focus:outline-none placeholder:text-white"
             />
           </div>
           <div className="border-b border-white/40 pb-2">
             <input
               type="text"
               placeholder="Your Phone"
-              className="w-full bg-transparent text-white text-base font-normal font-['Figtree'] py-3 px-0 focus:outline-none placeholder:text-white"
+              className="w-full bg-transparent text-white text-base font-normal font-figtree  py-3 px-0 focus:outline-none placeholder:text-white"
             />
           </div>
           <div className="border-b border-white/40 pb-2 flex items-center">
             <select
-              className="w-full bg-transparent text-white text-base font-normal font-['Figtree'] py-3 px-0 focus:outline-none appearance-none"
+              className="w-full bg-transparent text-white text-base font-normal font-figtree  py-3 px-0 focus:outline-none appearance-none"
               defaultValue=""
             >
               <option value="" disabled className="text-[#c08a99] bg-white">
@@ -145,13 +145,13 @@ const Footer = () => (
           <div className="border-b border-white/40 pb-2">
             <textarea
               placeholder="Your Comment"
-              className="w-full bg-transparent text-white text-base font-normal font-['Figtree'] py-3 px-0 focus:outline-none placeholder:text-white resize-none"
+              className="w-full bg-transparent text-white text-base font-normal font-figtree  py-3 px-0 focus:outline-none placeholder:text-white resize-none"
               rows={3}
             />
           </div>
           <button
             type="submit"
-            className="w-full outline outline-white bg-white text-[#40372c] text-xs font-medium font-['Figtree'] uppercase tracking-[3px] py-3 mt-2 hover:bg-[#f8f3ee] transition"
+            className="w-full outline outline-white bg-white text-[#40372c] text-xs font-medium font-figtree  uppercase tracking-[3px] py-3 mt-2 hover:bg-[#f8f3ee] transition"
           >
             Make an appointment
           </button>

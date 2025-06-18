@@ -40,7 +40,7 @@ const Services = () => (
             />
             <div className="absolute inset-0 bg-black/20" />
             <div className="absolute bottom-8 left-0 w-full flex justify-center">
-              <span className="text-white text-2xl font-normal font-['Figtree']">
+              <span className="text-white text-2xl font-normal font-figtree ">
                 {service.title}
               </span>
             </div>

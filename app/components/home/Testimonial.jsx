@@ -34,7 +34,7 @@ const Testimonial = () => (
 
         {/* Rating Info */}
         <motion.p
-          className="text-[#9c858b] text-lg font-normal font-['Figtree'] leading-7 mb-8"
+          className="text-[#9c858b] text-lg font-normal font-figtree  leading-7 mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
@@ -45,7 +45,7 @@ const Testimonial = () => (
 
         {/* Appointment Button */}
         <motion.button
-          className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
+          className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}

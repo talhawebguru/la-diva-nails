@@ -46,7 +46,7 @@ const ClientFeedBack = () => (
       <h2 className="text-white text-[40px] md:text-[61.88px] font-normal font-['Inter'] leading-[75.60px] mb-4">
         Client feedbacks
       </h2>
-      <p className="text-white text-lg font-normal font-['Figtree'] leading-7">
+      <p className="text-white text-lg font-normal font-figtree  leading-7">
         Discover what our satisfied clients have to say
       </p>
     </motion.div>
@@ -83,7 +83,7 @@ const ClientFeedBack = () => (
                 <span key={i} className="text-white text-lg">★</span>
               ))}
             </div>
-            <p className="text-white text-lg font-normal font-['Figtree'] leading-7 mb-6">
+            <p className="text-white text-lg font-normal font-figtree  leading-7 mb-6">
               {feedback.text}
             </p>
             <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
@@ -93,7 +93,7 @@ const ClientFeedBack = () => (
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-white text-xs font-semibold font-['Figtree'] uppercase leading-tight tracking-widest">
+            <p className="text-white text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
               {feedback.name}
             </p>
           </motion.div>

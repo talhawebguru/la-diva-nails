@@ -32,7 +32,7 @@ const FreshManicure = () => (
     >
       {/* Heading */}
       <div>
-        <div className="text-[#40372c] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] mb-2">
+        <div className="text-[#40372c] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] mb-2">
           More than just nails
         </div>
         <h2 className="text-[#c08a99] text-[51.13px] font-normal font-['Inter'] leading-[68px]">
@@ -59,10 +59,10 @@ const FreshManicure = () => (
             </span>
           </div>
           <div>
-            <div className="text-[#40372c] text-[22px] font-medium font-['Figtree'] leading-[29.70px] mb-2">
+            <div className="text-[#40372c] text-[22px] font-medium font-figtree  leading-[29.70px] mb-2">
               Cuticles removed every year
             </div>
-            <p className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7">
+            <p className="text-[#5b534a] text-lg font-normal font-figtree  leading-7">
               Our skilled technicians provide a range of nail treatments that
               will leave your nails looking and feeling their best.
             </p>
@@ -80,10 +80,10 @@ const FreshManicure = () => (
             </span>
           </div>
           <div>
-            <div className="text-[#40372c] text-[22px] font-medium font-['Figtree'] leading-[29.70px] mb-2">
+            <div className="text-[#40372c] text-[22px] font-medium font-figtree  leading-[29.70px] mb-2">
               Unique nail designs created
             </div>
-            <p className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7">
+            <p className="text-[#5b534a] text-lg font-normal font-figtree  leading-7">
               Our nail specialists can replicate any design and nail art from
               customers' ideas.
             </p>

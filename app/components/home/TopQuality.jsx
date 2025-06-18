@@ -18,13 +18,13 @@ const TopQuality = () => (
         quality products<br />
         you can <span className="text-[#c08a99] text-[43.70px] font-normal font-['Inter'] leading-[68px]">trust</span>
       </h2>
-      <p className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7 mb-6">
+      <p className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-6">
         At our salon, we provide both shellac and gel nail services, so you may
         choose which one best suits your needs. Choose from a wide variety of
         colors for your shellac or gel nails from our skilled professionals. So,
         your freshly painted nails will never break or chip.
       </p>
-      <p className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7 mb-8">
+      <p className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-8">
         You may normally work without worrying about chipping or scratching the
         shellac on your nails for up to two weeks.
       </p>
@@ -33,7 +33,7 @@ const TopQuality = () => (
           <div className="w-12 h-12 mx-auto mb-2">
             <Image src="/images/organic.svg" alt="Organic" width={48} height={48} />
           </div>
-          <p className="text-[#66715f] text-xs font-semibold font-['Figtree'] uppercase leading-tight tracking-widest">
+          <p className="text-[#66715f] text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
             organic
           </p>
         </div>
@@ -41,7 +41,7 @@ const TopQuality = () => (
           <div className="w-12 h-12 mx-auto mb-2">
             <Image src="/images/non-toxic.svg" alt="Non-Toxic" width={48} height={48} />
           </div>
-          <p className="text-[#66715f] text-xs font-semibold font-['Figtree'] uppercase leading-tight tracking-widest">
+          <p className="text-[#66715f] text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
             non-toxic
           </p>
         </div>
@@ -49,7 +49,7 @@ const TopQuality = () => (
           <div className="w-12 h-12 mx-auto mb-2">
             <Image src="/images/eco-friendly.svg" alt="Eco-Friendly" width={48} height={48} />
           </div>
-          <p className="text-[#66715f] text-xs font-semibold font-['Figtree'] uppercase leading-tight tracking-widest">
+          <p className="text-[#66715f] text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
             eco-friendly
           </p>
         </div>

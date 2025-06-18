@@ -48,7 +48,7 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full h-[calc(100vh-134px)] max-h-[920px] !flex !flex-wrap md:items-end pb-5 bg-black/80 relative overflow-hidden"
+      className="w-full h-[calc(100vh-134px)] max-h-[920px] !flex !flex-wrap justify-center  items-center md:items-end pb-5 bg-black/80 relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Background Image */}
@@ -63,11 +63,11 @@ const Hero = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-30 z-10" />
       <Container>
-        <div className="relative z-20 flex flex-wrap md:flex-nowrap  h-full justify-end items-end">
-          <div className="w-full px-4 md:px-0">
+        <div className="relative z-20 flex flex-wrap md:flex-nowrap  h-full justify-center md:justify-end items-end">
+          <div className="w-full px-4 md:px-0 text-center md:text-left">
             {/* Headline */}
             <motion.h1
-              className="font-['Inter'] selection:bg-pink-100 font-normal text-white text-[40px] sm:text-[50px] md:text-[64px] lg:text-[90px] leading-[1.1] max-w-4xl"
+              className="font-mogan selection:bg-[rgba(192,138,153,1)] font-normal text-white text-[64px] lg:text-[90px] xl:text-[120px] 2xl:text-[130px] leading-14 md:leading-9 lg:leading-[120px] max-w-7xl 2xl:max-w-6xl"
               initial="hidden"
               animate="visible"
               custom={1}
@@ -76,7 +76,7 @@ const Hero = () => {
               Your destination for
               <br />
               <motion.span
-                className="text-[#ebdfdc] text-[30px] sm:text-[40px] md:text-[48px] lg:text-[70px] leading-[1.1]"
+                className="text-[#ebdfdc] selection:text-white font-betterlett text-[80px] lg:text-[110px] leading-[1.1]"
                 initial="hidden"
                 animate="visible"
                 custom={2}
@@ -84,8 +84,9 @@ const Hero = () => {
               >
                 picture-perfect
               </motion.span>
+              <br className="md:hidden" />
               <motion.span
-                className="text-white text-[40px] sm:text-[50px] md:text-[60px] lg:text-[90px] leading-[1.1] ml-5"
+                className="text-white text-[80px] lg:text-[130px] leading-[1.1] ml-8"
                 initial="hidden"
                 animate="visible"
                 custom={3}
@@ -96,20 +97,20 @@ const Hero = () => {
             </motion.h1>
             {/* Subheadline */}
             <motion.p
-              className="mt-4 sm:mt-8 text-white text-[14px] sm:text-[16px] md:text-[18px] font-medium font-['Figtree'] leading-[1.35] max-w-xl"
+              className="mt-4 selection:bg-[rgba(192,138,153,1)] sm:mt-8 text-white text-[16px] md:text-[22px] font-medium font-figtree  leading-[1.35] max-w-2xl"
               initial="hidden"
               animate="visible"
               custom={4}
               variants={textVariants}
             >
-              Welcome to <span className="font-semibold">La Diva</span>, a full
+              Welcome to <span className="font-semibold">The Nail Spa</span>, a full
               service nail salon and boutique.
             </motion.p>
           </div>
 
           {/* Button */}
           <motion.div
-            className="mt-8 sm:mt-12 flex items-end justify-end"
+            className="mt-8 sm:mt-12 flex justify-center md:items-end md:justify-end"
             initial="hidden"
             animate="visible"
             variants={buttonVariants}
@@ -120,7 +121,7 @@ const Hero = () => {
               style={{ translateX, translateY }}
             >
               <motion.span
-                className="text-[#40372c] text-xs sm:text-sm font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] text-center"
+                className="text-[#40372c] text-xs  font-medium font-figtree  uppercase leading-tight tracking-[3px] text-center"
                 initial="hidden"
                 animate="visible"
                 variants={buttonTextVariants}

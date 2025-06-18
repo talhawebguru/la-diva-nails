@@ -12,7 +12,7 @@ const TopNav = () => {
   return (
     <section className="w-full h-11 bg-[#e1cad0]">
       <Container>
-        <div className="flex w-full h-11 items-center justify-center sm:justify-between text-[15px] font-medium font-['Figtree'] leading-normal">
+        <div className="flex w-full h-11 items-center justify-center sm:justify-between text-[15px] font-medium font-figtree  leading-normal">
          <div className="hidden sm:flex items-center gap-4">
            {/* Location */}
           <div className="hidden sm:flex items-center">

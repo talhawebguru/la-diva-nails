@@ -31,17 +31,17 @@ const NailArtGallery = () => (
       viewport={{ once: true }}
     >
       <div className="mb-4">
-        <div className="text-white text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] mb-2">
+        <div className="text-white text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] mb-2">
           Nail Gallery
         </div>
         <h2 className="text-white text-[40px] md:text-[55px] lg:text-[65.95px] font-normal font-['Inter'] leading-[75.60px]">
           Explore our<br />nail art gallery
         </h2>
       </div>
-      <p className="text-white text-lg font-normal font-['Figtree'] leading-7 mb-8">
+      <p className="text-white text-lg font-normal font-figtree  leading-7 mb-8">
         A gallery of nail designs our artists have created.
       </p>
-      <button className="px-8 py-3 bg-white text-[#40372c] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition">
+      <button className="px-8 py-3 bg-white text-[#40372c] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition">
         Explore Gallery
       </button>
     </motion.div>

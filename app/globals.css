@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+ --font-mogan: mogan, sans-serif;
+ --font-betterlett: betterlett, sans-serif;
+ --font-figtree: figtree, sans-serif;
+}

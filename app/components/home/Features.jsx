@@ -34,10 +34,10 @@ const Features = () => (
               className="mb-6"
               style={{ color: "#bfa7ad" }}
             />
-            <div className="text-[#40372c] text-[22px] font-medium font-['Figtree'] leading-[29.7px] mb-3">
+            <div className="text-[#40372c] text-[22px] font-medium font-figtree  leading-[29.7px] mb-3">
               {feature.title}
             </div>
-            <div className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7 max-w-[400px]">
+            <div className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 max-w-[400px]">
               {feature.desc}
             </div>
           </div>

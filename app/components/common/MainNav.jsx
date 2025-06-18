@@ -49,7 +49,7 @@ const MainNav = () => {
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <div key={link.label} className="flex items-center cursor-pointer">
-                  <span className="text-[#40372c] text-[15px] font-semibold font-['Figtree'] leading-normal flex items-center">
+                  <span className="text-[#40372c] text-[15px] font-semibold font-figtree  leading-normal flex items-center">
                     {link.label}
                     {link.dropdown && (
                       <FiChevronDown className="ml-1 text-[#40372c]" size={14} />
@@ -71,9 +71,9 @@ const MainNav = () => {
                 <button className="p-2 hover:bg-[#f5e6ea] rounded transition-colors">
                   <FiShoppingCart className="text-[#40372c]" size={18} />
                 </button>
-                <span className="absolute -top-2 -right-2 bg-[#c08a99] text-white text-xs font-medium font-['Figtree'] leading-3 rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                <span className="absolute -top-2 -right-2 bg-[#c08a99] text-white text-xs font-medium font-figtree  leading-3 rounded-full w-5 h-5 flex items-center justify-center">0</span>
               </div>
-              <button className="hidden sm:block px-8 py-3 bg-white border border-[#66715f] text-[#66715f] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] transition-colors hover:bg-[#e1cad0]">
+              <button className="hidden sm:block px-8 py-3 bg-white border border-[#66715f] text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] transition-colors hover:bg-[#e1cad0]">
                 book a visit
               </button>
             </div>
@@ -118,7 +118,7 @@ const MainNav = () => {
                   </li>
                 ))}
               </ul>
-              <button className="w-full mt-6 px-8 py-3 bg-white border border-[#66715f] text-[#66715f] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] transition-colors hover:bg-[#e1cad0]">
+              <button className="w-full mt-6 px-8 py-3 bg-white border border-[#66715f] text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] transition-colors hover:bg-[#e1cad0]">
                 book a visit
               </button>
             </nav>

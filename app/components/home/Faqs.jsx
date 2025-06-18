@@ -49,7 +49,7 @@ const Faqs = () => {
             onClick={() => toggleFaq(index)}
           >
             <div className="flex justify-between items-center">
-              <p className="text-[#40372c] text-[22px] font-medium font-['Figtree'] leading-snug">
+              <p className="text-[#40372c] text-[22px] font-medium font-figtree  leading-snug">
                 {faq.question}
               </p>
               {activeIndex === index ? (
@@ -60,7 +60,7 @@ const Faqs = () => {
             </div>
             {activeIndex === index && (
               <motion.div
-                className="mt-2 text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7"
+                className="mt-2 text-[#5b534a] text-lg font-normal font-figtree  leading-7"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
@@ -79,10 +79,10 @@ const Faqs = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <p className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7 mb-4">
+        <p className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-4">
           Can’t find what you’re looking for?
         </p>
-        <button className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition">
+        <button className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition">
           Contact Us
         </button>
       </motion.div>

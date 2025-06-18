@@ -41,7 +41,7 @@ const PriceGuide = () => (
           Price Guide
         </motion.h2>
         <motion.p
-          className="text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7 text-center mb-12"
+          className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -82,10 +82,10 @@ const PriceGuide = () => (
               <ul>
                 {manicurePrices.map((item, idx) => (
                   <li key={item.name} className="flex justify-between items-center mb-3">
-                    <span className="text-[#5b534a] text-base font-normal font-['Figtree'] leading-relaxed">
+                    <span className="text-[#5b534a] text-base font-normal font-figtree  leading-relaxed">
                       {item.name}
                     </span>
-                    <span className="text-[#66715f] text-xs font-semibold font-['Figtree'] uppercase leading-tight tracking-widest">
+                    <span className="text-[#66715f] text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
                       {item.price}
                     </span>
                   </li>
@@ -118,10 +118,10 @@ const PriceGuide = () => (
               <ul>
                 {pedicurePrices.map((item, idx) => (
                   <li key={item.name} className="flex justify-between items-center mb-3">
-                    <span className="text-white text-base font-normal font-['Figtree'] leading-relaxed">
+                    <span className="text-white text-base font-normal font-figtree  leading-relaxed">
                       {item.name}
                     </span>
-                    <span className="text-[#e1cad0] text-xs font-semibold font-['Figtree'] uppercase leading-tight tracking-widest">
+                    <span className="text-[#e1cad0] text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
                       {item.price}
                     </span>
                   </li>
@@ -132,7 +132,7 @@ const PriceGuide = () => (
         </motion.div>
         {/* Full Price Guide Button */}
         <motion.button
-          className="mt-4 px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
+          className="mt-4 px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}

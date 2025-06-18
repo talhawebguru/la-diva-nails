@@ -31,7 +31,7 @@ const AboutUs = () => {
           </div>
           {/* Text Content */}
           <div className="flex-2 max-w-xl">
-            <div className="mb-4 text-[#40372c] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px]">
+            <div className="mb-4 text-[#40372c] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px]">
               Extensive Nail Care
             </div>
             <h2 className="mb-6 font-['Inter'] font-normal text-[#40372c] text-[44px] sm:text-[55px] md:text-[65.39px] leading-[1.15]">
@@ -40,12 +40,12 @@ const AboutUs = () => {
               <br />
               fingers to toes
             </h2>
-            <p className="mb-10 text-[#5b534a] text-lg font-normal font-['Figtree'] leading-7">
+            <p className="mb-10 text-[#5b534a] text-lg font-normal font-figtree  leading-7">
               Nail art, manicures, and nail shaping are just some of the specialties
               of our experienced nail technicians. You can count on us whether you
               want a classic manicure, trendy shellac paint, or custom nail art.
             </p>
-            <button className="px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-['Figtree'] uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition">
+            <button className="px-8 py-3 border border-[#66715f] rounded bg-white text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition">
               More About Us
             </button>
           </div>
