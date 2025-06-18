@@ -13,7 +13,7 @@ const services = [
 ];
 
 const ServicesGallery = () => (
-  <section className="pt-20 pb-5">
+  <section className="pt-6 lg:pt-20 pb-4 overflow-hidden">
     <motion.div
       className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 px-2 lg:px-4"
       initial={{ opacity: 0, y: 60 }}
@@ -32,7 +32,7 @@ const ServicesGallery = () => (
             src={service.src}
             alt={service.alt}
             fill
-            className="object-contain object-center"
+            className="object-cover xl:object-contain object-center"
           />
         </motion.div>
       ))}

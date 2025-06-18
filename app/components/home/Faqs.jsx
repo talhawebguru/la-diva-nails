@@ -4,11 +4,27 @@ import { motion } from "motion/react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const faqs = [
-  { question: "How long do your gel nails last?", answer: "Gel nails typically last 2-3 weeks depending on care." },
-  { question: "What kind of payments do you accept?", answer: "We accept cash, credit cards, and gift cards." },
-  { question: "What if I broke my nail?", answer: "We offer repair services for broken nails. Contact us for details." },
-  { question: "Can I purchase my gift card?", answer: "Yes, gift cards are available for purchase at our salon." },
-  { question: "How do I book an appointment?", answer: "You can book an appointment online or call us directly." },
+  {
+    question: "How long do your gel nails last?",
+    answer: "Gel nails typically last 2-3 weeks depending on care.",
+  },
+  {
+    question: "What kind of payments do you accept?",
+    answer: "We accept cash, credit cards, and gift cards.",
+  },
+  {
+    question: "What if I broke my nail?",
+    answer:
+      "We offer repair services for broken nails. Contact us for details.",
+  },
+  {
+    question: "Can I purchase my gift card?",
+    answer: "Yes, gift cards are available for purchase at our salon.",
+  },
+  {
+    question: "How do I book an appointment?",
+    answer: "You can book an appointment online or call us directly.",
+  },
 ];
 
 const Faqs = () => {
@@ -82,13 +98,14 @@ const Faqs = () => {
         <p className="text-[#5b534a] text-lg font-normal font-figtree  leading-7 mb-4">
           Can’t find what you’re looking for?
         </p>
-        <motion.button className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
-        initial={{ opacity: 0, y: 20 }}
+        <motion.button
+          className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ backgroundColor: "#66715f" ,color: "white" }}
+          whileHover={{ backgroundColor: "#66715f", color: "white" }}
           transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
-          >
+        >
           Contact Us
         </motion.button>
       </motion.div>

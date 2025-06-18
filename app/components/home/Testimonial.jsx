@@ -5,7 +5,7 @@ import Container from "../common/Container";
 import { FiStar } from "react-icons/fi";
 
 const Testimonial = () => (
-  <section className="py-5 sm:py-16 lg:py-28 xl:py-32">
+  <section className="py-16 lg:py-20 overflow-hidden">
     <Container>
       <motion.div
         className="flex flex-col items-center text-center"
@@ -23,7 +23,7 @@ const Testimonial = () => (
 
         {/* Testimonial Text */}
         <motion.h2
-          className="text-[#5b534a] text-[32px] md:text-[46.72px] font-normal font-['Inter'] leading-[1.2] mb-6"
+          className="text-[#5b534a] text-[42px] md:text-[54px] font-normal font-mogan leading-[1.2] mb-6"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -46,9 +46,10 @@ const Testimonial = () => (
         {/* Appointment Button */}
         <motion.button
           className="px-8 py-3 border border-[#66715f] rounded bg-transparent text-[#66715f] text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] hover:bg-[#f8f3ee] transition"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
+          whileHover={{ backgroundColor: "#66715f" ,color: "white" }}
+          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           Make an Appointment
