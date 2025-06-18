@@ -24,7 +24,7 @@ const NailArtGallery = () => (
 
     {/* Overlay Content */}
     <motion.div
-      className="absolute inset-0 flex flex-col justify-center md:left-[58%] items-start px-8 lg:px-16 text-white text-left"
+      className="absolute inset-0 flex flex-col justify-center md:left-[58%] items-start px-4 sm:px-8 lg:px-16 text-white text-left"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

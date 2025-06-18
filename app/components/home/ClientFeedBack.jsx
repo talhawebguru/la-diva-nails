@@ -35,18 +35,18 @@ const feedbacks = [
 ];
 
 const ClientFeedBack = () => (
-  <section className="py-5 sm:py-16 lg:py-28 xl:py-32 bg-[#c08a99]">
+  <section className="py-5 sm:py-16 lg:py-28 xl:py-32 bg-[#c08a99] overflow-hidden">
     <motion.div
       className="text-center mb-12"
       initial={{ opacity: 0, y: -30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <h2 className="text-white text-[40px] md:text-[61.88px] font-normal font-['Inter'] leading-[75.60px] mb-4">
         Client feedbacks
       </h2>
-      <p className="text-white text-lg font-normal font-figtree  leading-7">
+      <p className="text-white text-lg font-normal font-figtree leading-7">
         Discover what our satisfied clients have to say
       </p>
     </motion.div>
@@ -61,18 +61,18 @@ const ClientFeedBack = () => (
       }}
       pagination={{
         clickable: true,
-        dynamicBullets: true,
+        el: ".swiper-pagination",
       }}
       breakpoints={{
         768: { slidesPerView: 2 },
         1024: { slidesPerView: 3 },
       }}
-      className="px-8 lg:px-16"
+      className="px-4 sm:px-8 lg:px-16"
     >
       {feedbacks.map((feedback, index) => (
         <SwiperSlide key={index}>
           <motion.div
-            className="flex flex-col items-center text-center bg-[#c08a99] p-8 border-l border-[#faf5ec]"
+            className="flex flex-col items-center text-center bg-[#c08a99] p-8 border-l border-[#faf5ec] h-[380px]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -83,7 +83,7 @@ const ClientFeedBack = () => (
                 <span key={i} className="text-white text-lg">★</span>
               ))}
             </div>
-            <p className="text-white text-lg font-normal font-figtree  leading-7 mb-6">
+            <p className="text-white text-lg font-normal font-figtree leading-7 mb-6">
               {feedback.text}
             </p>
             <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
@@ -93,14 +93,27 @@ const ClientFeedBack = () => (
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-white text-xs font-semibold font-figtree  uppercase leading-tight tracking-widest">
+            <p className="text-white text-xs font-semibold font-figtree uppercase leading-tight tracking-widest">
               {feedback.name}
             </p>
           </motion.div>
         </SwiperSlide>
       ))}
     </Swiper>
-    {/* <div className="swiper-pagination mt-8 "></div> */}
+    <div className="swiper-pagination !flex !justify-center w-full gap-2 mt-10"></div>
+    <style jsx>{`
+      .swiper-pagination-bullet {
+        background: transparent !important;
+        border: 2px solid white !important;
+        width: 12px !important;
+        height: 12px !important;
+        opacity: 1 !important;
+
+      }
+      .swiper-pagination-bullet-active {
+        background: white !important;
+      }
+    `}</style>
   </section>
 );
 
