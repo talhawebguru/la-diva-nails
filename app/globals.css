@@ -5,3 +5,7 @@
  --font-betterlett: betterlett, sans-serif;
  --font-figtree: figtree, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
