@@ -43,7 +43,7 @@ const ClientFeedBack = () => (
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      <h2 className="text-white text-[40px] md:text-[61.88px] font-normal font-['Inter'] leading-[75.60px] mb-4">
+      <h2 className="text-white text-[40px] md:text-[61.88px] font-normal font-mogan leading-[75.60px] mb-4">
         Client feedbacks
       </h2>
       <p className="text-white text-lg font-normal font-figtree leading-7">

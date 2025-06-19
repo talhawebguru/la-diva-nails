@@ -34,7 +34,7 @@ const NailArtGallery = () => (
         <div className="text-white text-xs font-medium font-figtree  uppercase leading-tight tracking-[3px] mb-2">
           Nail Gallery
         </div>
-        <h2 className="text-white text-[40px] md:text-[55px] lg:text-[65.95px] font-normal font-['Inter'] leading-[75.60px]">
+        <h2 className="text-white text-[40px] md:text-[55px] lg:text-[65.95px] font-normal font-mogan leading-[75.60px]">
           Explore our<br />nail art gallery
         </h2>
       </div>
